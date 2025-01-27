@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact page</title>
+</head>
+
+<body>
+    <h1>Contact page</h1>
+{{if .Success}}
+<p>Thank you for your message</p>
+{{else}}
+<form method="POST">
+<label>Email:</label><br/>
+<input type="text" name="email"><br/>
+<label>Subject:</label><br/>
+<input type="text" name="subject"><br/>
+<label>Message:</label><br/>
+<textarea name="message"></textarea><br/>
+<input type="submit">
+</form>
+{{end}}
+</body>
+</html>
